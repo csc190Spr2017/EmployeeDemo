@@ -11,8 +11,10 @@ package employeedemo;
  */
 public class Employee {
     public Employee(String name, int age){
+        this.name = name;
+        this.age = age;
         
     }
     protected String name;
-    protected String age;
+    protected int age;
 }

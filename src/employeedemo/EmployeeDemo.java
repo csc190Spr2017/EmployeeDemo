@@ -21,13 +21,27 @@ public class EmployeeDemo extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+        //1. prepare data
+        Employee [] arrEm = new Employee []{
+          new Employee("Jack", 20),
+           new Employee("Alice", 30),
+           new Employee("Jimmy", 40),
+           new Employee("Cathy", 50),
+           new Employee("Alex", 20),
+           new Employee("Bob", 30),
+           new Employee("Janice", 40),
+           new Employee("Catlina", 50),
+        };
+        
         Button btn = new Button();
-        btn.setText("Say 'Hello World'");
+        btn.setText("Show Employees");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                EmployeeListForm elf = new EmployeeListForm(arrEm);
+                elf.refresh();
+                elf.showAndWait();
             }
         });
         
