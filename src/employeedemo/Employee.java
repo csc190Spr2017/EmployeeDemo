@@ -14,5 +14,5 @@ public class Employee {
         
     }
     protected String name;
-    protected String age;
+    protected int age;
 }

@@ -39,6 +39,12 @@ public class EmployeeDemo extends Application {
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
+          //TEST USE -- Branch EmployeeForm
+        Employee e1 = new Employee("Jack", 10);
+        EmployeeForm ef = new EmployeeForm(e1);
+        ef.showAndWait();
+        System.out.println("name: " + e1.name + ", age: " + e1.age);
     }
 
     /**
@@ -46,6 +52,9 @@ public class EmployeeDemo extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        
+      
+        
     }
     
 }
